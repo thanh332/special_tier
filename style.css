@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f0e3;
+    color: #354a35;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #264c38, #567c50);
+    color: #fff4df;
+}
+
+.logo {
+    font-size: 45px;
+    animation: float 3s infinite ease-in-out;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 5vw, 55px);
+    margin: 15px 0;
+}
+
+header p {
+    letter-spacing: 3px;
+    color: #e8d9bd;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 20px;
+    background: #fff8ed;
+    box-shadow: 0 4px 15px #00000012;
+}
+
+nav a {
+    color: #35523b;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c45d35;
+    transform: translateY(-3px);
+}
+
+.hero {
+    min-height: 440px;
+    padding: 65px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: linear-gradient(120deg, #e4e9d3, #f7e2c7);
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.small-title {
+    color: #b35b36;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 5vw, 48px);
+    margin: 20px 0;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.panda {
+    font-size: clamp(100px, 20vw, 190px);
+    animation: float 4s infinite ease-in-out;
+    filter: drop-shadow(0 15px 12px #60452b33);
+}
+
+.button {
+    display: inline-block;
+    background: #a94d2d;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #713c29;
+    transform: scale(1.08);
+}
+
+section {
+    padding: 75px 8%;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #9b684b;
+    margin-bottom: 35px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 22px;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.card {
+    background: #fffaf2;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px #634c2912;
+    border-bottom: 4px solid #b7c69c;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 0 12px 25px #634c2925;
+}
+
+.card span {
+    font-size: 40px;
+}
+
+.card h3 {
+    margin: 15px;
+    color: #a94d2d;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.forest {
+    text-align: center;
+    background: #294b37;
+    color: #fff4df;
+}
+
+.forest p {
+    max-width: 650px;
+    margin: 25px auto;
+    line-height: 1.9;
+}
+
+.forest-emoji {
+    font-size: 45px;
+    margin-top: 35px;
+    letter-spacing: 10px;
+}
+
+#funfacts {
+    background: #f0e6d5;
+}
+
+.fact {
+    max-width: 750px;
+    margin: 18px auto;
+    padding: 20px;
+    background: #fffaf2;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+.fact:hover {
+    transform: translateX(10px);
+    background: #e2ebd6;
+}
+
+.fact span {
+    font-size: 30px;
+}
+
+.secret {
+    text-align: center;
+    background: #e5d7bd;
+}
+
+.secret details {
+    max-width: 500px;
+    margin: 30px auto 0;
+    padding: 22px;
+    background: #fffaf2;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.secret summary {
+    color: #a94d2d;
+    font-weight: 800;
+}
+
+.secret details p {
+    margin-top: 18px;
+}
+
+.protect {
+    text-align: center;
+    background: #dce6d0;
+}
+
+.protect p {
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 1.9;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #203d2c;
+    color: #fff4df;
+    line-height: 2;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@media (max-width: 650px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+}
